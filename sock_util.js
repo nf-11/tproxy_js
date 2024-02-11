@@ -22,7 +22,7 @@ function readUntil(socket, separator)
             while (data !== null)
             {
                 result.push(data);
-                if (data.toString() == separator)
+                if (data.toString() === separator)
                 {
                     resolve(Buffer.concat(result).toString());
                     return;
